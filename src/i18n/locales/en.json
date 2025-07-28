@@ -1,0 +1,81 @@
+{
+  "title": "Football Stats Mega App",
+  "light_mode": "Light Mode",
+  "dark_mode": "Dark Mode",
+  "nav": {
+    "stats": "Stats",
+    "news": "News",
+    "favorites": "Favorites",
+    "about": "About",
+    "search": "Search",
+    "compare": "Compare"
+  },
+  "about": {
+    "title": "📖 About the App",
+    "description": "This football statistics app shows updated information about top scorers, allows filtering players, saving favorites, reading football news, searching for players and comparing their stats. It is optimized with modern technologies to offer a fast and responsive experience.",
+    "technologiesTitle": "⚙️ Technologies Used",
+    "technologies": {
+      "react": "React: Main library to build the UI.",
+      "vite": "Vite: Fast bundler for development and optimized builds.",
+      "tailwind": "TailwindCSS: Utility-first CSS framework for responsive styling and Dark Mode.",
+      "apiFootball": "API-Football: API for real-time data on leagues and players.",
+      "chartjs": "Chart.js: Library for visualizing data with charts.",
+      "pwa": "vite-plugin-pwa: Progressive Web App support.",
+      "router": "React Router: Navigation between pages.",
+      "i18next": "i18next: Multi-language support (in progress)."
+    },
+    "structureTitle": "📂 App Structure",
+    "structureIntro": "The app is divided into the following main pages:",
+    "pages": {
+      "topScorers": "🏆 Top Scorers: Shows the top scorers in each league. Includes advanced filters by season, league, position, and nationality. Allows adding players to favorites.",
+      "search": "🔍 Search: Allows searching for players by name in the selected league and viewing their main stats.",
+      "compare": "⚔️ Compare: Allows comparing two players in the same league and viewing their data side by side (goals, assists, team, etc.).",
+      "news": "📰 News: Displays recent football-related headlines using a news API.",
+      "favorites": "⭐ Favorites: Shows players saved as favorites using localStorage for persistence.",
+      "about": "📖 About: (this page) Describes the app's technologies and architecture."
+    },
+    "howItWorksTitle": "🔨 How it Works",
+    "howItWorks": "Each main component connects to the API using axios to fetch data. Favorites are stored locally, and the PWA allows the app to be installed and work offline. The new Search and Compare pages reuse the API to provide fast searches and interactive player comparisons."
+  },
+  "topScorers": {
+    "title": "🏆 Goals by Player",
+    "league": "League",
+    "season": "Season",
+    "position": "Position",
+    "nationality": "Nationality",
+    "all": "All",
+    "loading": "Loading data...",
+    "favoritesAdd": "Add/Remove from favorites",
+    "goals": "Goals",
+    "noData": "⚠️ No data available for this selection."
+  },
+  "news": {
+    "title": "📰 Football News",
+    "loading": "Loading news...",
+    "noNews": "No news found."
+  },
+  "favorites": {
+    "title": "⭐ Favorites",
+    "noFavorites": "You don't have any favorite players yet."
+  },
+  "search": {
+    "title": "🔍 Search Players",
+    "placeholder": "Type player name...",
+    "button": "Search",
+    "league": "League",
+    "noResults": "No results found.",
+    "loading": "Searching players..."
+  },
+  "compare": {
+    "title": "⚔️ Compare Players",
+    "league": "League",
+    "search1": "Search Player 1",
+    "search2": "Search Player 2",
+    "button": "Search",
+    "loading1": "Loading Player 1...",
+    "loading2": "Loading Player 2...",
+    "noTeam": "No Team",
+    "goals": "Goals",
+    "assists": "Assists"
+  }
+}

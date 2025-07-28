@@ -1,0 +1,82 @@
+{
+  "title": "Football Stats Mega App",
+  "light_mode": "Modo Claro",
+  "dark_mode": "Modo Oscuro",
+  "nav": {
+    "stats": "Estadísticas",
+    "news": "Noticias",
+    "favorites": "Favoritos",
+    "about": "Acerca de",
+    "search": "Buscar",
+    "compare": "Comparar"
+  },
+
+  "about": {
+    "title": "📖 Sobre la App",
+    "description": "Esta app de estadísticas de fútbol muestra información actualizada sobre los máximos goleadores, permite filtrar jugadores, guardar favoritos, consumir noticias deportivas, buscar jugadores y comparar estadísticas entre ellos. Está optimizada con tecnologías modernas para ofrecer una experiencia rápida y responsiva.",
+    "technologiesTitle": "⚙️ Tecnologías utilizadas",
+    "technologies": {
+      "react": "React: Biblioteca principal para construir la UI.",
+      "vite": "Vite: Empaquetador para desarrollo rápido y build optimizado.",
+      "tailwind": "TailwindCSS: Framework CSS utility-first para estilos responsivos y Dark Mode.",
+      "apiFootball": "API-Football: API para datos en tiempo real de ligas y jugadores.",
+      "chartjs": "Chart.js: Librería de gráficos para representar datos de manera visual.",
+      "pwa": "vite-plugin-pwa: Soporte para Progressive Web App (PWA).",
+      "router": "React Router: Navegación entre páginas.",
+      "i18next": "i18next: Soporte multi-idioma (en proceso)."
+    },
+    "structureTitle": "📂 Estructura de la App",
+    "structureIntro": "La app está dividida en las siguientes páginas principales:",
+    "pages": {
+      "topScorers": "🏆 Top Scorers: Muestra los máximos goleadores de cada liga. Incluye filtros avanzados por temporada, liga, posición y nacionalidad. Permite agregar jugadores a favoritos.",
+      "search": "🔍 Search: Permite buscar jugadores por nombre dentro de la liga seleccionada y ver sus estadísticas principales.",
+      "compare": "⚔️ Compare: Permite comparar dos jugadores de una misma liga y ver sus datos lado a lado (goles, asistencias, equipo, etc.).",
+      "news": "📰 News: Página que consume la API de noticias para mostrar titulares recientes relacionados con fútbol.",
+      "favorites": "⭐ Favoritos: Muestra los jugadores que el usuario guardó como favoritos usando localStorage para persistencia.",
+      "about": "📖 About: (esta página) Describe las tecnologías y la arquitectura de la app."
+    },
+    "howItWorksTitle": "🔨 Cómo funciona",
+    "howItWorks": "Cada componente principal se conecta a la API usando axios para obtener datos. Los favoritos se almacenan localmente, y la PWA permite que la app se instale y funcione offline. Las nuevas páginas Search y Compare reutilizan la API para ofrecer búsquedas rápidas y comparaciones interactivas entre jugadores."
+  },
+  "topScorers": {
+    "title": "🏆 Goles por jugador",
+    "league": "Liga",
+    "season": "Temporada",
+    "position": "Posición",
+    "nationality": "Nacionalidad",
+    "all": "Todas",
+    "loading": "Cargando datos...",
+    "favoritesAdd": "Agregar/Quitar de favoritos",
+    "goals": "Goles",
+    "noData": "⚠️ No hay datos disponibles para esta selección."
+  },
+  "news": {
+    "title": "📰 Noticias de fútbol",
+    "loading": "Cargando noticias...",
+    "noNews": "No se encontraron noticias."
+  },
+  "favorites": {
+    "title": "⭐ Favoritos",
+    "noFavorites": "No tienes jugadores favoritos todavía."
+  },
+  "search": {
+    "title": "🔍 Buscar jugadores",
+    "placeholder": "Escribe el nombre del jugador...",
+    "league": "Liga",
+    "button": "Buscar",
+    "noResults": "No se encontraron resultados.",
+    "loading": "Buscando jugadores..."
+  },
+  "compare": {
+    "title": "⚔️ Comparar jugadores",
+    "league": "Liga",
+    "search1": "Buscar Jugador 1",
+    "search2": "Buscar Jugador 2",
+    "button": "Buscar",
+    "loading1": "Cargando Jugador 1...",
+    "loading2": "Cargando Jugador 2...",
+    "noTeam": "Sin equipo",
+    "goals": "Goles",
+    "assists": "Asistencias"
+  }
+}
